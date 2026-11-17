@@ -64,8 +64,8 @@ def lang_keyboard(back: bool) -> InlineKeyboardMarkup:
 
 def main_menu(lang: str) -> InlineKeyboardMarkup:
     return kb([
-        [(t(lang, "opt_inperson"), "go:book"), (t(lang, "opt_phone"), "go:call")],
-        [(t(lang, "opt_tg"), "go:tgchat"), (t(lang, "opt_web"), "go:webform")],
+        [(t(lang, "opt_tg"), "go:tgchat"), (t(lang, "opt_phone"), "go:call")],
+        [(t(lang, "opt_inperson"), "go:book"), (t(lang, "opt_web"), "go:webform")],
         [(t(lang, "btn_verse"), "go:verse"), (t(lang, "btn_settings"), "go:set")],
     ])
 

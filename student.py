@@ -87,7 +87,7 @@ async def clear_reply_kb(ctx, chat_id: int) -> None:
 
 def contacts_block(ctx, lang: str) -> str:
     items = C(ctx).contacts
-    return "\n".join(f"👤 {esc(c)}" for c in items) if items else t(lang, "no_contacts")
+    return "\n".join(f"• {esc(c)}" for c in items) if items else t(lang, "no_contacts")
 
 
 def today_index(ctx) -> int:
@@ -202,8 +202,8 @@ async def on_go(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
 async def show_call(update: Update, ctx):
     lang = L(ctx, update.effective_user.id)
     hours = C(ctx).service_hours
-    body = t(lang, "call_body", contacts=contacts_block(ctx, lang),
-             hours=t(lang, "hours_line", hours=esc(hours)) if hours else "")
+    hours_text = t(lang, "hours_line", hours=esc(hours)) if hours else ""
+    body = t(lang, "call_body", contacts=contacts_block(ctx, lang), hours=hours_text)
     await render(update, ctx, screen(lang, t(lang, "call_title"), body), ui.home_only(lang))
 
 

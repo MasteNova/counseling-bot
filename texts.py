@@ -38,14 +38,17 @@ EN: dict[str, str] = {
     "opt_phone": "📞 Phone Call",
     "opt_tg": "💬 Telegram Chat",
     "opt_web": "🌐 Web Form",
-    "tg_title": "Chat on Telegram",
+    "tg_title": "Chat with a Counselor",
     "tg_body": (
-        "If you prefer a direct conversation, you can message a counselor on Telegram. "
-        "Your Telegram profile name may be visible, and Telegram handles messages under its own privacy practices. "
-        "Share only what you're comfortable sending.\n\n"
-        "Tap below to open Telegram:"
+        "You are about to connect directly with a counselor from our fellowship team. "
+        "We are here to listen and support you with care.\n\n"
+        "🤝 <b>Who will I talk to?</b>\nA trusted brother or sister from the ACU counseling team.\n\n"
+        "🔒 <b>Is it private?</b>\nYour Telegram profile name may be visible. Standard Telegram chats are not "
+        "end-to-end encrypted by default, and Telegram handles messages under its own privacy practices. "
+        "Please share only what you feel comfortable sending.\n\n"
+        "Tap below to start chatting. We are ready to listen. 🤍"
     ),
-    "btn_open_tg": "💬 Open Telegram Chat",
+    "btn_open_tg": "💬 Start Telegram Chat",
     "web_title": "Web Form",
     "web_body": (
         "Prefer to use a form? Open it below. Whether identifying details are requested depends on the form settings. "
@@ -83,14 +86,15 @@ EN: dict[str, str] = {
         "call emergency services or go to someone near you right now.\n\n{contacts}"
     ),
     # ---- call
-    "call_title": "Call a counselor",
+    "call_title": "Talk by Phone",
     "call_body": (
-        "For urgent matters you can call the fellowship counselors directly. Calls are kept confidential.\n\n"
-        "{contacts}{hours}\n\n"
-        "<i>Please call during service hours. If you are in immediate danger, contact emergency "
-        "services or someone near you right now.</i>"
+        "Sometimes hearing a friendly voice can help. You can call our counselors directly.\n\n"
+        "📞 <b>Counselor contacts:</b>\n{contacts}\n\n"
+        "{hours}"
+        "⚠️ <i>If you are in immediate danger or facing a life-threatening emergency, contact local emergency "
+        "services right away.</i>"
     ),
-    "hours_line": "\n🕘 {hours}",
+    "hours_line": "🕘 <b>Service Hours:</b> {hours}\n\n",
     "no_contacts": "(Contact numbers will be added soon.)",
     # ---- booking
     "book_title": "Book a meeting",
@@ -270,14 +274,16 @@ AM: dict[str, str] = {
     "opt_phone": "📞 ስልክ ለስልክ",
     "opt_tg": "💬 የቴሌግራም ቻት",
     "opt_web": "🌐 የድረ-ገጽ ቅጽ",
-    "tg_title": "በቴሌግራም መወያየት",
+    "tg_title": "ከአማካሪ ጋር መወያየት",
     "tg_body": (
-        "በቀጥታ መወያየት ከፈለጉ፣ በቴሌግራም ከአማካሪ ጋር መልእክት መላክ ይችላሉ። "
-        "የቴሌግራም መገለጫ ስምዎ ሊታይ ይችላል፣ መልእክቶችም በቴሌግራም የግላዊነት ፖሊሲ መሠረት ይስተናገዳሉ። "
-        "ለመላክ የሚመችዎትን ብቻ ያካፍሉ።\n\n"
-        "ቴሌግራምን ለመክፈት ከታች ይጫኑ:"
+        "በቀጥታ ከኅብረታችን አማካሪ ጋር ይገናኛሉ። በጥንቃቄ ለማዳመጥና ለመደገፍ ዝግጁ ነን።\n\n"
+        "🤝 <b>ከማን ጋር ነው የማወያየው?</b>\nከታመነ የ ACU የምክር ቡድን ወንድም ወይም እህት ጋር።\n\n"
+        "🔒 <b>ምስጢራዊ ነው?</b>\nየቴሌግራም መገለጫ ስምዎ ሊታይ ይችላል። መደበኛ የቴሌግራም ውይይቶች "
+        "በነባሪ ከጫፍ እስከ ጫፍ የተመሰጠሩ አይደሉም፤ ቴሌግራምም መልእክቶችን በራሱ የግላዊነት መመሪያ "
+        "መሠረት ያስተናግዳል። ለመላክ የሚመችዎትን ብቻ ያካፍሉ።\n\n"
+        "ውይይቱን ለመጀመር ከታች ይጫኑ። ለማዳመጥ ዝግጁ ነን። 🤍"
     ),
-    "btn_open_tg": "💬 የቴሌግራም ቻት ክፈት",
+    "btn_open_tg": "💬 የቴሌግራም ውይይት ጀምር",
     "web_title": "የድረ-ገጽ ቅጽ",
     "web_body": (
         "ቅጽ መጠቀም ይመርጣሉ? ከታች ይክፈቱት። መለያ መረጃ መጠየቁ በቅጹ ቅንብሮች ላይ ይመረኮዛል። "
@@ -313,14 +319,15 @@ AM: dict[str, str] = {
         "አፋጣኝ አደጋ ላይ ከሆኑ ወይም ራስዎን ለመጉዳት እያሰቡ ከሆነ አይጠብቁ — "
         "አሁኑኑ ለድንገተኛ አገልግሎት ይደውሉ ወይም በአቅራቢያዎ ወዳለ ሰው ይሂዱ።\n\n{contacts}"
     ),
-    "call_title": "አማካሪ በስልክ ማግኘት",
+    "call_title": "በስልክ ማውራት",
     "call_body": (
-        "ጉዳይዎ አስቸኳይ ከሆነ የኅብረቱን አማካሪዎች በቀጥታ በስልክ ማግኘት ይችላሉ። ጥሪዎ በምስጢር ይያዛል።\n\n"
-        "{contacts}{hours}\n\n"
-        "<i>እባክዎ በአገልግሎት ሰዓት ይደውሉ። አፋጣኝ አደጋ ላይ ከሆኑ አሁኑኑ የድንገተኛ አገልግሎትን "
-        "ወይም በአቅራቢያዎ ያለን ሰው ያግኙ።</i>"
+        "አንዳንድ ጊዜ ወዳጃዊ ድምፅ መስማት ሊያጽናና ይችላል። አማካሪዎቻችንን በቀጥታ መደወል ይችላሉ።\n\n"
+        "📞 <b>የአማካሪዎች ስልክ:</b>\n{contacts}\n\n"
+        "{hours}"
+        "⚠️ <i>አፋጣኝ አደጋ ላይ ከሆኑ ወይም ሕይወትዎን በሚያስፈራ ሁኔታ ውስጥ ከሆኑ፣ "
+        "እባክዎን ወዲያውኑ የአካባቢውን የአስቸኳይ አገልግሎት ያነጋግሩ።</i>"
     ),
-    "hours_line": "\n🕘 {hours}",
+    "hours_line": "🕘 <b>የአገልግሎት ሰዓት:</b> {hours}\n\n",
     "no_contacts": "(የስልክ ቁጥሮች በቅርቡ ይጨመራሉ።)",
     "book_title": "ቀጠሮ መያዝ",
     "book_day_body": "የትኛው ቀን ይመችዎታል?",

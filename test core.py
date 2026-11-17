@@ -18,7 +18,7 @@ def test_main_menu_has_three_two_button_rows():
     assert len(rows) == 3
     assert all(len(row) == 2 for row in rows)
     assert [button.callback_data for row in rows for button in row] == [
-        "go:book", "go:call", "go:tgchat", "go:webform", "go:verse", "go:set"
+        "go:tgchat", "go:call", "go:book", "go:webform", "go:verse", "go:set"
     ]
 
 
